@@ -1,0 +1,10 @@
+c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\bin\Debug\ВП-Лаб2.exe.config
+c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\bin\Debug\ВП-Лаб2.exe
+c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\bin\Debug\ВП-Лаб2.pdb
+c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП_Лаб2.Form2.resources
+c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП_Лаб2.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.exe
+c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.pdb
+c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП_Лаб2.Form3.resources
