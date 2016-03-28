@@ -8,3 +8,13 @@ c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\ob
 c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.exe
 c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.pdb
 c:\users\user\documents\visual studio 2015\Projects\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП_Лаб2.Form3.resources
+D:\2\ВП-Лаб2\ВП-Лаб2\bin\Debug\ВП-Лаб2.exe.config
+D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.exe
+D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.pdb
+D:\2\ВП-Лаб2\ВП-Лаб2\bin\Debug\ВП-Лаб2.exe
+D:\2\ВП-Лаб2\ВП-Лаб2\bin\Debug\ВП-Лаб2.pdb
+D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.csprojResolveAssemblyReference.cache
+D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП_Лаб2.Form2.resources
+D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП_Лаб2.Form3.resources
+D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП_Лаб2.Properties.Resources.resources
+D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.csproj.GenerateResource.Cache
