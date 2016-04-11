@@ -14,6 +14,19 @@ namespace ВП_Лаб2
     {
         class M
         {
+            private List<int> el = new List<int>();
+            public int Index(int i, int b,int e, int[] a)
+            {
+                for (int j = 0; j < a.Length; j++)
+                {
+                    el.Insert(j, 0);
+                }
+                for (int l = b, j = 0; l <= e && j < a.Length; j++, l++)
+                {
+                    el.Insert(l, a[j]);
+                }
+                return el[i];
+            }
             public void Sum2(int[] d, int[] g, ref int[] p)
             {
                 for (int i = 0; i < d.Length; i++)
@@ -26,6 +39,20 @@ namespace ВП_Лаб2
                 for (int i = 0; i < d.Length; i++)
                 {
                     p[i] = d[i] + g[i] + t[i];
+                }
+            }
+            public void Min2(int[] d, int[] g, ref int[] p)
+            {
+                for (int i = 0; i < d.Length; i++)
+                {
+                    p[i] = d[i] - g[i];
+                }
+            }
+            public void Min3(int[] d, int[] g, int[] t, ref int[] p)
+            {
+                for (int i = 0; i < d.Length; i++)
+                {
+                    p[i] = d[i] - g[i] - t[i];
                 }
             }
             public void U(double a, int[] d, ref double[] p)
@@ -44,7 +71,6 @@ namespace ВП_Лаб2
             }
         }
         Form3 f;
-        Form4 f2;
         public Form2()
         {
             InitializeComponent();
@@ -54,7 +80,7 @@ namespace ВП_Лаб2
         {
             f = new Form3();
             f.Show();
-            int l1, l2, l3;
+            int l1, l2, l3, s, k;
             try
             {
                 string t1 = textBox1.Text;
@@ -93,7 +119,7 @@ namespace ВП_Лаб2
                 l1 = m1.Length;
                 l2 = m2.Length;
                 l3 = m3.Length;
-                M p = new M();
+               M p = new M();
                 if (l1 != l2 && l2 != l3 && l1 != l3)
                 {
                     f.label1.Visible = true;
@@ -106,10 +132,17 @@ namespace ВП_Лаб2
                     int[] o = new int[l1];
                     f.label1.Visible = true;
                     f.textBox1.Visible = true;
+                    f.label2.Visible = true;
+                    f.textBox2.Visible = true;
                     p.Sum3(m1, m2, m3, ref o);
                     for (int i = 0; i < l1; i++)
                     {
                         f.textBox1.Text += Convert.ToString(o[i]) + " ";
+                    }
+                    p.Min3(m1, m2, m3, ref o);
+                    for (int i = 0; i < l1; i++)
+                    {
+                        f.textBox2.Text += Convert.ToString(o[i]) + " ";
                     }
                 }
                 else if (l1 == l2)
@@ -117,10 +150,17 @@ namespace ВП_Лаб2
                     int[] o = new int[l1];
                     f.label1.Visible = true;
                     f.textBox1.Visible = true;
+                    f.label2.Visible = true;
+                    f.textBox2.Visible = true;
                     p.Sum2(m1, m2, ref o);
                     for (int i = 0; i < l1; i++)
                     {
                         f.textBox1.Text += Convert.ToString(o[i]) + " ";
+                    }
+                    p.Min2(m1, m2, ref o);
+                    for (int i = 0; i < l1; i++)
+                    {
+                        f.textBox2.Text += Convert.ToString(o[i]) + " ";
                     }
                 }
                 else if (l1 == l3)
@@ -128,10 +168,17 @@ namespace ВП_Лаб2
                     int[] o = new int[l1];
                     f.label1.Visible = true;
                     f.textBox1.Visible = true;
+                    f.label2.Visible = true;
+                    f.textBox2.Visible = true;
                     p.Sum2(m1, m3, ref o);
                     for (int i = 0; i < l1; i++)
                     {
                         f.textBox1.Text += Convert.ToString(o[i]) + " ";
+                    }
+                    p.Min2(m1, m3, ref o);
+                    for (int i = 0; i < l1; i++)
+                    {
+                        f.textBox2.Text += Convert.ToString(o[i]) + " ";
                     }
                 }
                 else if (l2 == l3)
@@ -139,10 +186,17 @@ namespace ВП_Лаб2
                     int[] o = new int[l2];
                     f.label1.Visible = true;
                     f.textBox1.Visible = true;
+                    f.label2.Visible = true;
+                    f.textBox2.Visible = true;
                     p.Sum2(m2, m3, ref o);
                     for (int i = 0; i < l2; i++)
                     {
                         f.textBox1.Text += Convert.ToString(o[i]) + " ";
+                    }
+                    p.Min2(m2, m3, ref o);
+                    for (int i = 0; i < l2; i++)
+                    {
+                        f.textBox2.Text += Convert.ToString(o[i]) + " ";
                     }
                 }
                 if (String.IsNullOrEmpty(textBox4.Text))
@@ -159,7 +213,7 @@ namespace ВП_Лаб2
                         f.richTextBox2.Text += "Матрица 1: ";
                         for (int i = 0; i < l1; i++)
                         {
-                            f.richTextBox2.Text += Convert.ToString(q1[i]) + " ";
+                            f.richTextBox2.Text += Convert.ToString(Math.Round(q1[i], 3)) + " ";
                         }
                         f.richTextBox2.Text += Environment.NewLine;
                     }
@@ -172,7 +226,7 @@ namespace ВП_Лаб2
                         f.richTextBox2.Text += "Матрица 2: ";
                         for (int i = 0; i < l2; i++)
                         {
-                            f.richTextBox2.Text += Convert.ToString(q2[i]) + " ";
+                            f.richTextBox2.Text += Convert.ToString(Math.Round(q2[i], 3)) + " ";
                         }
                         f.richTextBox2.Text += Environment.NewLine;
                     }
@@ -185,7 +239,7 @@ namespace ВП_Лаб2
                         f.richTextBox2.Text += "Матрица 3: ";
                         for (int i = 0; i < l3; i++)
                         {
-                            f.richTextBox2.Text += Convert.ToString(q3[i]) + " ";
+                            f.richTextBox2.Text += Convert.ToString(Math.Round(q3[i],3)) + " ";
                         }
                     }
                 }
@@ -233,18 +287,60 @@ namespace ВП_Лаб2
                         }
                     }
                 }
+                if (String.IsNullOrEmpty(textBox6.Text) || String.IsNullOrEmpty(textBox7.Text))
+                {}
+                else
+                {
+                    s = Convert.ToInt32(textBox6.Text);
+                    k = Convert.ToInt32(textBox7.Text);
+                    if ((k - s + 1) > m1.Length)
+                    {
+                        MessageBox.Show("Неверно введены индексы!");
+                    }
+                    else
+                    {
+                        f.richTextBox3.Visible = true;
+                        f.richTextBox3.Text += "Matrix: ";
+                        for (int i = s; i <= k; i++)
+                        {
+                            f.richTextBox3.Text += Convert.ToString(p.Index(i, s, k, m1)) + " ";
+                        }
+                        f.richTextBox3.Text += Environment.NewLine;
+                        if (String.IsNullOrEmpty(textBox8.Text))
+                        { }
+                        else
+                        {
+                            int i;
+                            i = Convert.ToInt32(textBox8.Text);
+                            f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(p.Index(i, s, k, m1));
+                            f.richTextBox3.Text += Environment.NewLine;
+                        }
+                        if (String.IsNullOrEmpty(textBox9.Text))
+                        { }
+                        else
+                        {
+                            int i;
+                            i = Convert.ToInt32(textBox9.Text);
+                            f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(p.Index(i, s, k, m1));
+                            f.richTextBox3.Text += Environment.NewLine;
+                        }
+                        if (String.IsNullOrEmpty(textBox10.Text))
+                        { }
+                        else
+                        {
+                            int i;
+                            i = Convert.ToInt32(textBox10.Text);
+                            f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(p.Index(i, s, k, m1));
+                            f.richTextBox3.Text += Environment.NewLine;
+                        }
+                    }
+                }
             }
-            catch
+            catch(Exception h)
             {
-                MessageBox.Show("Ошибка ввода!");
+                MessageBox.Show(h.Message);
             }    
       }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            f2 = new Form4();
-            f2.Show();
-            
-        }
     }
 }

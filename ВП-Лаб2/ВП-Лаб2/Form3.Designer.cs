@@ -34,6 +34,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -68,9 +71,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 10);
+            this.textBox1.Location = new System.Drawing.Point(76, 10);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 20);
+            this.textBox1.Size = new System.Drawing.Size(181, 20);
             this.textBox1.TabIndex = 6;
             this.textBox1.Visible = false;
             // 
@@ -78,7 +81,7 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(12, 61);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(204, 96);
+            this.richTextBox1.Size = new System.Drawing.Size(204, 68);
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
             this.richTextBox1.Visible = false;
@@ -87,16 +90,46 @@
             // 
             this.richTextBox2.Location = new System.Drawing.Point(263, 61);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(370, 96);
+            this.richTextBox2.Size = new System.Drawing.Size(242, 68);
             this.richTextBox2.TabIndex = 14;
             this.richTextBox2.Text = "";
             this.richTextBox2.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(263, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Вычитание";
+            this.label2.Visible = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(331, 10);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(174, 20);
+            this.textBox2.TabIndex = 16;
+            this.textBox2.Visible = false;
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(138, 135);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(204, 78);
+            this.richTextBox3.TabIndex = 17;
+            this.richTextBox3.Text = "";
+            this.richTextBox3.Visible = false;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(681, 168);
+            this.ClientSize = new System.Drawing.Size(513, 218);
+            this.Controls.Add(this.richTextBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.textBox1);
@@ -118,5 +151,8 @@
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.RichTextBox richTextBox1;
         public System.Windows.Forms.RichTextBox richTextBox2;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.RichTextBox richTextBox3;
     }
 }
