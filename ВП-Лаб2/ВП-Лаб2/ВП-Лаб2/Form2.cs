@@ -299,21 +299,52 @@ namespace ВП_Лаб2
                     }
                     else
                     {
-                        f.richTextBox3.Visible = true;
-                        f.richTextBox3.Text += "Matrix: ";
-                        for (int i = s; i <= k; i++)
+                        if (s>k)
                         {
-                            f.richTextBox3.Text += Convert.ToString(p.Index(i, s, k, m1)) + " ";
+                            MessageBox.Show("Неверно введены индексы!!");
                         }
-                        f.richTextBox3.Text += Environment.NewLine;
-                        if (String.IsNullOrEmpty(textBox8.Text))
-                        { }
                         else
                         {
-                            int i;
-                            i = Convert.ToInt32(textBox8.Text);
-                            f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(p.Index(i, s, k, m1));
+                        f.richTextBox3.Visible = true;
+                        if (s == k)
+                        {
+                            f.richTextBox3.Text += "Matrix: ";
+                            f.richTextBox3.Text += Convert.ToString(m1[0]);
                             f.richTextBox3.Text += Environment.NewLine;
+                        }
+                        else
+                        {
+                            f.richTextBox3.Text += "Matrix: ";
+                            for (int i = s; i <= k; i++)
+                            {
+                                f.richTextBox3.Text += Convert.ToString(p.Index(i, s, k, m1)) + " ";
+                            }
+                            f.richTextBox3.Text += Environment.NewLine;
+                        }
+                            if (String.IsNullOrEmpty(textBox8.Text))
+                            { }
+                            else
+                            {
+                                int i;
+                                i = Convert.ToInt32(textBox8.Text);
+                                if (i < s || i > k)
+                                {
+                                    MessageBox.Show("Неверно введен индекс элемента!");
+                                }
+                                else
+                                {
+                                    if (s == k && i == s)
+                                    {
+                                        f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(m1[0]);
+                                        f.richTextBox3.Text += Environment.NewLine;
+                                    }
+                                    else
+                                    {
+                                        f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(p.Index(i, s, k, m1));
+                                        f.richTextBox3.Text += Environment.NewLine;
+                                    }
+                                }
+                            }
                         }
                         if (String.IsNullOrEmpty(textBox9.Text))
                         { }
@@ -321,8 +352,23 @@ namespace ВП_Лаб2
                         {
                             int i;
                             i = Convert.ToInt32(textBox9.Text);
-                            f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(p.Index(i, s, k, m1));
-                            f.richTextBox3.Text += Environment.NewLine;
+                            if (i < s || i > k)
+                            {
+                                MessageBox.Show("Неверно введен индекс элемента!");
+                            }
+                            else
+                            {
+                                if (s == k && i == s)
+                                {
+                                    f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(m1[0]);
+                                    f.richTextBox3.Text += Environment.NewLine;
+                                }
+                                else
+                                {
+                                    f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(p.Index(i, s, k, m1));
+                                    f.richTextBox3.Text += Environment.NewLine;
+                                }
+                            }
                         }
                         if (String.IsNullOrEmpty(textBox10.Text))
                         { }
@@ -330,8 +376,24 @@ namespace ВП_Лаб2
                         {
                             int i;
                             i = Convert.ToInt32(textBox10.Text);
-                            f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(p.Index(i, s, k, m1));
-                            f.richTextBox3.Text += Environment.NewLine;
+                            if (i < s || i > k)
+                            {
+                                MessageBox.Show("Неверно введен индекс элемента!");
+                            }
+                            else
+                            {
+                                if (s == k && i == s)
+                                {
+                                    f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(m1[0]);
+                                    f.richTextBox3.Text += Environment.NewLine;
+                                }
+                                else
+                                {
+                                    f.richTextBox3.Text += "[" + i + "] элемент: " + Convert.ToString(p.Index(i, s, k, m1));
+                                    f.richTextBox3.Text += Environment.NewLine;
+
+                                }
+                            }
                         }
                     }
                 }

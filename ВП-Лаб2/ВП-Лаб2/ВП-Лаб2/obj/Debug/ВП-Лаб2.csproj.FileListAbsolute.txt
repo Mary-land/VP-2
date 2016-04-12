@@ -18,6 +18,6 @@ D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП_Лаб2.Form2.resources
 D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП_Лаб2.Form3.resources
 D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП_Лаб2.Properties.Resources.resources
 D:\2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.csproj.GenerateResource.Cache
-D:\Загрузки\ВП-Лаб2\ВП-Лаб2\bin\Debug\ВП-Лаб2.exe.config
-D:\Загрузки\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.exe
-D:\Загрузки\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.pdb
+D:\1\ВП-Лаб2\ВП-Лаб2\ВП-Лаб2\bin\Debug\ВП-Лаб2.exe.config
+D:\1\ВП-Лаб2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.exe
+D:\1\ВП-Лаб2\ВП-Лаб2\ВП-Лаб2\obj\Debug\ВП-Лаб2.pdb
